@@ -1,7 +1,5 @@
 # Ingestion pipeline
 
-import os
-
 from langchain_chroma import Chroma
 
 from src.loaders.pdf_loader import PDFLoader
@@ -15,7 +13,8 @@ from src.embeddings.embedding_model import (
 )
 
 from config.settings import (
-    CHROMA_DIR
+    CHROMA_DIR,
+    COLLECTION_NAME
 )
 
 
@@ -55,7 +54,8 @@ class DocumentIngestion:
         Chroma.from_documents(
             documents=chunks,
             embedding=self.embedding_model,
-            persist_directory=CHROMA_DIR
+            persist_directory=CHROMA_DIR,
+            collection_name=COLLECTION_NAME
         )
 
         print("Ingestion complete.")

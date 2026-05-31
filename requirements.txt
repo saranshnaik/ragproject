@@ -5,6 +5,8 @@ langchain-chroma
 langchain-community
 langchain-core
 langchain-huggingface
+langchain-ollama
+langchain-text-splitters
 
 llama-index
 

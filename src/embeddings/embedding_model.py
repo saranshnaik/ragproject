@@ -3,7 +3,8 @@
 from langchain_huggingface import HuggingFaceEmbeddings
 
 from config.settings import (
-    EMBEDDING_MODEL
+    EMBEDDING_MODEL,
+    HF_TOKEN
 )
 
 
@@ -16,7 +17,8 @@ class EmbeddingModel:
             HuggingFaceEmbeddings(
                 model_name=EMBEDDING_MODEL,
                 model_kwargs={
-                    "device": "cpu"
+                    "device": "cpu",
+                    "token": HF_TOKEN
                 }
             )
         )
