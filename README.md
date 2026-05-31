@@ -31,10 +31,6 @@ A Retrieval-Augmented Generation (RAG) application that enables users to upload 
 │   ├── retrieval_config.py
 │   └── settings.py
 │
-├── data
-│   ├── processed
-│   └── raw
-│
 ├── src
 │   ├── chains
 │   │   └── rag_chain.py
@@ -137,7 +133,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. ## Environment Configuration
+### 4. Environment Configuration
 
 Create a `.env` file in the project root:
 
