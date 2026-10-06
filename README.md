@@ -241,3 +241,7 @@ python -m src.test.test_rag
 ## License
 
 This project is licensed under the MIT License.
+
+## Author
+
+**Saransh**
